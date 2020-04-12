@@ -1,0 +1,1 @@
+[strace](./strace/strace_cheat_sheet.md)
