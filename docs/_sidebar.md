@@ -14,3 +14,5 @@
 - OSI
   - IP
     - [IP ranges](ip_ranges.md)
+- vim
+  - [vim save no permissions](vim_save_no_permissions.md)
