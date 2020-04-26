@@ -29,6 +29,6 @@ fi
 ' --tag-name-filter cat -- --branches --tags
 ```
 Publish and override the remote after review:
-```
+```bash
 git push --force --tags origin 'refs/heads/*'
 ```
