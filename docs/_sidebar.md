@@ -9,3 +9,5 @@
   - [Samsung debloat phone](samsung_debloat.md)
 - Stream
   - [Socat](socat.md)
+- Log
+  - [tcpdump.service](log_tcpdump_service.md)
