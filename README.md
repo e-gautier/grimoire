@@ -1,2 +1,6 @@
-# [perf](perf/README.md)
-## [strace](perf/strace/README.md)
+# Grimoire
+Personal references.
+## deploy on Github pages
+```
+TODO
+```
