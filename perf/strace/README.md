@@ -1,3 +1,5 @@
+> [back](../README.md)
+# strace
 * trace specific system call: `strace -e open ls`
 * trace specific signal: `strace -e signal=SIGTERM ls`
 * trace multiple system call: `strace -e trace=open,read,write ls`
