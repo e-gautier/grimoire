@@ -2,3 +2,5 @@
   - [strace](strace.md)
 - coroutines
   - [Python coroutines](python_coroutines.md)
+- Git
+  - [Change author info](git_change_author_info.md)
