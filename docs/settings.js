@@ -1,4 +1,5 @@
 window.$docsify = {
   name: 'Grimoire',
-  relativePath: true
+  relativePath: true,
+  loadSidebar: true
 }

@@ -1,6 +1,9 @@
 # Grimoire
 Personal references.
-## deploy on Github pages
+## dev
+### Requirements
+- docsify
+### serve
 ```
-TODO
+docsify serve
 ```
