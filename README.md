@@ -5,5 +5,5 @@ Personal references.
 - docsify
 ### serve
 ```
-docsify serve
+docsify serve docs
 ```
