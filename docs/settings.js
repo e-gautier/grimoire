@@ -1,5 +1,6 @@
 window.$docsify = {
   name: 'Grimoire',
   relativePath: true,
-  loadSidebar: true
+  loadSidebar: true,
+  repo: 'e-gautier/grimoire'
 }
