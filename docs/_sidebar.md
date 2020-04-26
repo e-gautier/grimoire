@@ -4,6 +4,7 @@
   - [Python coroutines](python_coroutines.md)
 - Git
   - [Change author info](git_change_author_info.md)
+  - [Count lines by file](git_count_lines_by_file.md)
 - Android
   - [Samsung debloat phone](samsung_debloat.md)
 - Stream
