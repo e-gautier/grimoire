@@ -4,3 +4,5 @@
   - [Python coroutines](python_coroutines.md)
 - Git
   - [Change author info](git_change_author_info.md)
+- Android
+  - [Samsung debloat phone](samsung_debloat.md)
