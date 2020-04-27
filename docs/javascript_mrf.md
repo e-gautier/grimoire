@@ -9,7 +9,7 @@ const officers = [
   { id: 56, name: 'Admiral Ozzel' },
   { id: 88, name: 'Commander Jerjerrod' }
 ];
-// What you need
+// What you need (only the ids)
 [20, 24, 56, 88]
 ```
 ```javascript
