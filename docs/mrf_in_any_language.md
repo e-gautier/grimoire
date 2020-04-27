@@ -1,6 +1,8 @@
-# Javascript .map(), .reduce(), .filter()
-## .map()
+# map(), reduce(), filter()
+## map()
 Run a callback for each element in an array and append each new value in the resulting array.
+<!-- tabs:start -->
+#### ** Javascript **
 ```javascript
 // What you have
 const officers = [
@@ -9,14 +11,27 @@ const officers = [
   { id: 56, name: 'Admiral Ozzel' },
   { id: 88, name: 'Commander Jerjerrod' }
 ];
-// What you need (only the ids)
+// We want an array of ids only
 [20, 24, 56, 88]
 ```
 ```javascript
 const officersIds = officers.map(officer => officer.id);
 ```
-## .reduce()
+#### ** Python **
+```python
+# What we have
+scores = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+# We want to get an array of each score doubled
+[10, 14, 44, 194, 108, 124, 154, 46, 146, 122]
+```
+```python
+doubled_scores = list(map(lambda score: score*2 , scores))
+```
+<!-- tabs:end -->
+## reduce()
 Run a callback for each element in an array but pass the result in argument of the next callback.
+<!-- tabs:start -->
+#### ** Javascript **
 ```javascript
 // What you have
 const pilots = [
@@ -38,8 +53,23 @@ var mostExpPilot = pilots.reduce((oldest, pilot) => {
   return (oldest.years || 0) > pilot.years ? oldest : pilot;
 }, {});
 ```
-## .filter()
+#### ** Python **
+```python
+# What we have
+scores = [5, 8, 10, 20, 50, 100]
+# We want to get the sum of all scores
+193
+```
+```python
+from functools import reduce
+
+sum_scores = reduce((lambda accumulator, score: accumulator + score), scores)
+```
+<!-- tabs:end -->
+## filter()
 Filter an array by conditionnal instructions.
+<!-- tabs:start -->
+#### ** Javascript **
 ```javascript
 // What we have
 var pilots = [
@@ -54,7 +84,20 @@ var pilots = [
 const rebels = pilots.filter(pilot => pilot.faction === "Rebels");
 const empire = pilots.filter(pilot => pilot.faction === "Empire");
 ```
+#### ** Python **
+```python
+# What we have
+scores = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+# We want an array of odd scores only
+[5, 7, 97, 77, 23, 73, 61]
+```
+```python
+odd_scores = list(filter(lambda score: (score%2 != 0) , scores))
+```
+<!-- tabs:end -->
 ## Combining .map(), .reduce() and .filter()
+<!-- tabs:start -->
+#### ** Javascript **
 ```javascript
 // What we have
 var personnel = [
@@ -72,5 +115,13 @@ const totalJediScore = personnel
   .map(jedi => jedi.pilotingScore + jedi.shootingScore)
   .reduce((acc, score) => acc + score, 0);
 ```
-
+#### ** Python **
+TODO
+<!-- tabs:end -->
+## Sources
+<!-- tabs:start -->
+#### ** Javascript **
 >Source: https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+#### ** Python **
+>source: https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/
+<!-- tabs:end -->
