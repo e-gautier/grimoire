@@ -95,7 +95,7 @@ scores = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
 odd_scores = list(filter(lambda score: (score%2 != 0) , scores))
 ```
 <!-- tabs:end -->
-## Combining .map(), .reduce() and .filter()
+## Combining map(), reduce() and filter()
 <!-- tabs:start -->
 #### ** Javascript **
 ```javascript
