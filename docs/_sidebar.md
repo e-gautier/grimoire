@@ -1,5 +1,6 @@
 - perf
   - [strace](strace.md)
+  - [sar](sar.md)
 - coroutines
   - [Python coroutines](python_coroutines.md)
 - Git
