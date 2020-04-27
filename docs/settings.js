@@ -3,7 +3,5 @@ window.$docsify = {
   relativePath: true,
   loadSidebar: true,
   repo: 'e-gautier/grimoire',
-  themeColor: '#42b983',
-  tabs: {
-  }
+  themeColor: '#42b983'
 }
