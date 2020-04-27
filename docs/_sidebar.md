@@ -1,8 +1,8 @@
-- perf
-  - [strace](strace.md)
-  - [sar](sar.md)
 - Linux
   - [chmod cheat sheet](chmod_cheat_sheet.md)
+  - perf
+    - [strace](strace.md)
+    - [sar](sar.md)
 - coroutines
   - [Python coroutines](python_coroutines.md)
 - Map, Reduce, Filter
