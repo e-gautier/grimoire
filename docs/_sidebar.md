@@ -3,6 +3,9 @@
   - [sar](sar.md)
 - coroutines
   - [Python coroutines](python_coroutines.md)
+- Map, Reduce, Filter
+  - [Python MRF](python_mrf.md)
+  - [Javascript MRF](javascript_mrf.md)
 - Git
   - [Change author info](git_change_author_info.md)
   - [Count lines by file](git_count_lines_by_file.md)
