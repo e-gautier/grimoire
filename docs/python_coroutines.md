@@ -1,4 +1,3 @@
-> [back](../)
 # Python coroutines
 ```python
 import asyncio
@@ -6,13 +5,17 @@ import time
 
 
 async def manage_file_as_fake_task(delay, name):
-    await asyncio.sleep(delay)
-    print(name)
+    # await asyncio.sleep(delay)
+    await asyncio.get_event_loop().run_in_executor(None, time.sleep, delay)
+    print('task for file %s successfully ran' % name)
 
 
 async def run_tasks(tasks):
     for task in tasks:
-        await task
+        try:
+            await task
+        except asyncio.TimeoutError:
+            print('task expired')
 
 
 def create_tasks():
@@ -29,6 +32,7 @@ def create_tasks():
     for file in files:
         tasks.append(
             asyncio.create_task(manage_file_as_fake_task(*file))
+            # asyncio.wait_for(manage_file_as_fake_task(*file), timeout=2)
         )
 
     return tasks

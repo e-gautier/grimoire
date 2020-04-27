@@ -1,4 +1,3 @@
-> [back](../)
 # strace
 * trace specific system call: `strace -e open ls`
 * trace specific signal: `strace -e signal=SIGTERM ls`
