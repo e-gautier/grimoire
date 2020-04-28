@@ -1,6 +1,6 @@
 # Git change author info in the whole history
 
-> Note: Running this script rewrites history for all repository collaborators. After completing these steps, any person with forks or clones must fetch the rewritten history and rebase any local changes into the rewritten history.
+!> Note: Running this script rewrites history for all repository collaborators. After completing these steps, any person with forks or clones must fetch the rewritten history and rebase any local changes into the rewritten history.
 
 Change these variables:
 - OLD_EMAIL

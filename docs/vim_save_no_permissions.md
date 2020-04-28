@@ -1,4 +1,4 @@
 # vim save with privileged access
-```bash
+```vim
 :w !sudo tee %
 ```
