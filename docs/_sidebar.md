@@ -1,6 +1,13 @@
 - Linux
+  - [Write to a process std](write_process_std.md)
   - [chmod cheat sheet](chmod_cheat_sheet.md)
   - [Tmux cheat sheet](tmux_cheat_sheet.md)
+  - [Netcat reverse shell](nc_reverse_shell.md)
+  - [SSH add key no interaction](ssh_add_key_no_interaction.md)
+  - [remove comments from bash file](remove_comments_bash_file.md)
+  - [generate random alphanumeric strings](generate_random_alphanumeric_strings.md)
+  - [remove part of a string in bash](bash_string_remove_part.md)
+  - [Fork bomb](fork_bomb.md)
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
@@ -27,3 +34,7 @@
   - [Signature and asymetric encryption in Python](signature_encryption_python.md)
 - REGEX
   - [IP](ip_regex.md)
+- CSS
+  - [Rotate element](css_rotate.md)
+- Security
+  - [SYN flood](syn_flood.md)
