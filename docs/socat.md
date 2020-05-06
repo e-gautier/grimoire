@@ -28,3 +28,7 @@ redirect tcp stream listened from port 1234 to host:post while passing through s
 ```bash
 socat -dd TCP-LISTEN:1234,reuseaddr,fork SOCKS:<proxy server>:<host>:<port>,socksport=<proxy port>
 ```
+redirect a TCP connection to a simple HTTP server
+```bash
+socat TCP-LISTEN:1234,reuseaddr,fork SYSTEM:"echo HTTP/1.1 200 OK;echo;cat index.html"
+```
