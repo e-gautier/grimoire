@@ -32,3 +32,11 @@ redirect a TCP connection to a simple HTTP server
 ```bash
 socat TCP-LISTEN:1234,reuseaddr,fork SYSTEM:"echo HTTP/1.1 200 OK;echo;cat index.html"
 ```
+UDP on TCP to get through some proxies
+```bash
+# server side
+socat TCP-LISTEN:1234,reuseaddr,fork UDP:127.0.0.1:53
+
+# client side
+socat udp4-RECVFROM:53,reuseaddr,fork tcp:127.0.0.1:1234
+```
