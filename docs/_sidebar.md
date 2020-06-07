@@ -13,7 +13,7 @@
     - [sar](sar.md)
 - coroutines
   - [Python coroutines](python_coroutines.md)
-  - [Python timeout function](python_timeout_function.md)
+  - [Timeout a function in any language](timeout_function_in_any_language.md)
 - Map, Reduce, Filter
   - [MRF in any language](mrf_in_any_language.md)
 - Git
