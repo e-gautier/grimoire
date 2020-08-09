@@ -11,11 +11,14 @@
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
-- coroutines
-  - [Python coroutines](python_coroutines.md)
-  - [Timeout a function in any language](timeout_function_in_any_language.md)
-- Map, Reduce, Filter
-  - [MRF in any language](mrf_in_any_language.md)
+- Algorithms
+  - coroutines
+    - [Python coroutines](python_coroutines.md)
+    - [Timeout a function in any language](timeout_function_in_any_language.md)
+  - Map, Reduce, Filter
+    - [MRF in any language](mrf_in_any_language.md)
+  - Sorting
+    - [Quicksort](quicksort.md)
 - Git
   - [Change author info](git_change_author_info.md)
   - [Count lines by file](git_count_lines_by_file.md)
