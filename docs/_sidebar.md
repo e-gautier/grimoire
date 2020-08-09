@@ -12,6 +12,7 @@
     - [strace](strace.md)
     - [sar](sar.md)
 - Algorithms
+  - [Algorithms cheat sheet](algorithms_cheat_sheet.md)
   - coroutines
     - [Python coroutines](python_coroutines.md)
     - [Timeout a function in any language](timeout_function_in_any_language.md)
