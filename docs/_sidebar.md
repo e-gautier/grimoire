@@ -18,7 +18,10 @@
     - [Timeout a function in any language](timeout_function_in_any_language.md)
   - Map, Reduce, Filter
     - [MRF in any language](mrf_in_any_language.md)
+  - Linked lists
+    - [Merge sort two linked list](merge_sort_linked_list.md)
   - Sorting
+    - [Mergesort](mergesort.md)
     - [Quicksort](quicksort.md)
 - Git
   - [Change author info](git_change_author_info.md)
