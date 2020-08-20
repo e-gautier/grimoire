@@ -11,6 +11,8 @@
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
+  - Kernel
+    - [flags](kernel_flags.md)
 - Algorithms
   - [Algorithms cheat sheet](algorithms_cheat_sheet.md)
   - coroutines
