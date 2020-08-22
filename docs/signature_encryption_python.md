@@ -1,11 +1,21 @@
 # Signature and asymetric encryption in Python
->payload
+
+> Installation
+
+```bash
+pip install pycryptodome
+```
+
+> payload
+
 ```
 file to sign
 ```
->init.py
+
+> init.py
+
 ```python
-from Crypto.Hash import SHA512
+from Crypto.Hash import SHA1
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_PSS
 
@@ -22,7 +32,7 @@ with open('public.pem', MODE_WRITE_BYTE) as file:
 with open('payload', 'rb') as file:
     file_content = file.read()
 
-content_hash = SHA512.new(file_content)
+content_hash = SHA1.new(file_content)
 
 signature_scheme = PKCS1_PSS.new(pair)
 signature = signature_scheme.sign(content_hash)
@@ -38,10 +48,12 @@ encrypted_content = pair.encrypt(file_content, 'none')[0]
 with open('encrypted_payload', MODE_WRITE_BYTE) as file:
     file.write(encrypted_content)
 ```
->verify.py
+
+> verify.py
+
 ```python
 from Crypto.PublicKey import RSA
-from Crypto.Hash import SHA512
+from Crypto.Hash import SHA1
 from Crypto.Signature import PKCS1_PSS
 
 MODE_READ_BYTE = 'rb'
@@ -57,7 +69,7 @@ with open('payload', MODE_READ_BYTE) as file:
 with open('signature', MODE_READ_BYTE) as file:
     signature = file.read()
 
-content_hash = SHA512.new(file_content)
+content_hash = SHA1.new(file_content)
 
 signature_scheme = PKCS1_PSS.new(pair)
 verification = signature_scheme.verify(content_hash, signature)
