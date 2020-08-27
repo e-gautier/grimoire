@@ -13,6 +13,8 @@
     - [sar](sar.md)
   - Kernel
     - [flags](kernel_flags.md)
+- Cisco
+  - [Enable SSH V2](cisco_enable_ssh_2.md)
 - Algorithms
   - [Algorithms cheat sheet](algorithms_cheat_sheet.md)
   - coroutines
