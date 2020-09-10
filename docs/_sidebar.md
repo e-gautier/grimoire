@@ -42,6 +42,7 @@
 - vim
   - [vim save no permissions](vim_save_no_permissions.md)
 - Signature and asymetric encryption
+  - [From pem to ssh format conversion](pub_key_pem_to_ssh_format.md)
   - [Signature and asymetric encryption in Python](signature_encryption_python.md)
 - REGEX
   - [IP](ip_regex.md)
