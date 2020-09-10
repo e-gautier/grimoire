@@ -26,7 +26,7 @@ socat -dd -u TCP-LISTEN:1234 STDOUT
 
 redirect tcp stream listened from port 1234 to host:post while passing through socks server:
 ```bash
-socat -dd TCP-LISTEN:1234,reuseaddr,fork SOCKS:<proxy server>:<host>:<port>,socksport=<proxy port>
+socat -dd TCP-LISTEN:1234,reuseaddr,fork,bind=127.0.0.1 SOCKS:<proxy server>:<host>:<port>,socksport=<proxy port>
 ```
 redirect a TCP connection to a simple HTTP server
 ```bash
