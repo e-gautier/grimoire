@@ -15,7 +15,7 @@ file to sign
 > init.py
 
 ```python
-from Crypto.Hash import SHA1
+from Crypto.Hash import SHA512
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_PSS
 
@@ -32,7 +32,7 @@ with open('public.pem', MODE_WRITE_BYTE) as file:
 with open('payload', 'rb') as file:
     file_content = file.read()
 
-content_hash = SHA1.new(file_content)
+content_hash = SHA512.new(file_content)
 
 signature_scheme = PKCS1_PSS.new(pair)
 signature = signature_scheme.sign(content_hash)
@@ -53,7 +53,7 @@ with open('encrypted_payload', MODE_WRITE_BYTE) as file:
 
 ```python
 from Crypto.PublicKey import RSA
-from Crypto.Hash import SHA1
+from Crypto.Hash import SHA512
 from Crypto.Signature import PKCS1_PSS
 
 MODE_READ_BYTE = 'rb'
@@ -69,7 +69,7 @@ with open('payload', MODE_READ_BYTE) as file:
 with open('signature', MODE_READ_BYTE) as file:
     signature = file.read()
 
-content_hash = SHA1.new(file_content)
+content_hash = SHA512.new(file_content)
 
 signature_scheme = PKCS1_PSS.new(pair)
 verification = signature_scheme.verify(content_hash, signature)
