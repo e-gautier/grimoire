@@ -1,4 +1,5 @@
 - Linux
+  - [File types](linux_file_types.md)
   - [Write to a process std](write_process_std.md)
   - [chmod cheat sheet](chmod_cheat_sheet.md)
   - [Tmux cheat sheet](tmux_cheat_sheet.md)
