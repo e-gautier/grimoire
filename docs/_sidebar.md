@@ -16,6 +16,8 @@
 - Cisco
   - [Enable SSH V2](cisco_enable_ssh_2.md)
 - Algorithms
+  - Architecture
+    - [Polymorphism](polymorphism.md)
   - [Algorithms cheat sheet](algorithms_cheat_sheet.md)
   - coroutines
     - [Python coroutines](python_coroutines.md)
