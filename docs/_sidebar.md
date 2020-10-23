@@ -29,6 +29,8 @@
   - Sorting
     - [Mergesort](mergesort.md)
     - [Quicksort](quicksort.md)
+  - Matrices
+    - [rotation](matrix_rotation.md)
 - Git
   - [Change author info](git_change_author_info.md)
   - [Count lines by file](git_count_lines_by_file.md)
