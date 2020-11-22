@@ -9,7 +9,9 @@
   - [remove comments from bash file](remove_comments_bash_file.md)
   - [generate random alphanumeric strings](generate_random_alphanumeric_strings.md)
   - [remove part of a string in bash](bash_string_remove_part.md)
+  - [namespaces](linux_namespaces.md)
   - [Fork bomb](fork_bomb.md)
+  - [Socat](socat.md)
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
@@ -36,8 +38,6 @@
   - [Count lines by file](git_count_lines_by_file.md)
 - Android
   - [Samsung debloat phone](samsung_debloat.md)
-- Stream
-  - [Socat](socat.md)
 - Log
   - [tcpdump.service](log_tcpdump_service.md)
 - OSI
