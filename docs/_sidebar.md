@@ -10,8 +10,9 @@
   - [generate random alphanumeric strings](generate_random_alphanumeric_strings.md)
   - [remove part of a string in bash](bash_string_remove_part.md)
   - [namespaces](linux_namespaces.md)
-  - [Fork bomb](fork_bomb.md)
   - [Socat](socat.md)
+  - bash
+    - [script_errors](bash_script_errors.md)
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
