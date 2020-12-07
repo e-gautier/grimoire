@@ -8,10 +8,10 @@
   - [SSH add key no interaction](ssh_add_key_no_interaction.md)
   - [remove comments from bash file](remove_comments_bash_file.md)
   - [generate random alphanumeric strings](generate_random_alphanumeric_strings.md)
-  - [remove part of a string in bash](bash_string_remove_part.md)
   - [namespaces](linux_namespaces.md)
   - [Socat](socat.md)
   - bash
+    - [parameter expansion](shell_parameter_expansion.md)
     - [script_errors](bash_script_errors.md)
   - perf
     - [strace](strace.md)
