@@ -13,6 +13,7 @@
   - bash
     - [parameter expansion](shell_parameter_expansion.md)
     - [script_errors](bash_script_errors.md)
+    - [environment variables](bash_evironement_variables.md)
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
