@@ -17,6 +17,7 @@
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
+  - [sed](sed.md)
   - Kernel
     - [flags](kernel_flags.md)
 - Cisco
