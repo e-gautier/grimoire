@@ -18,6 +18,7 @@
     - [strace](strace.md)
     - [sar](sar.md)
   - [sed](sed.md)
+  - [awk](awk.md)
   - Kernel
     - [flags](kernel_flags.md)
 - Cisco
