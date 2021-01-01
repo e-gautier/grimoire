@@ -20,6 +20,7 @@
     - [sar](sar.md)
   - [sed](sed.md)
   - [awk](awk.md)
+  - [ethtools](ethtools.md)
   - Kernel
     - [flags](kernel_flags.md)
 - Cisco
