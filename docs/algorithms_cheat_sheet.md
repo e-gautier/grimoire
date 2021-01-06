@@ -1,16 +1,10 @@
-# Algorithms cheat sheet
+# Algorithms and data structures cheat sheet
 
-## Levenshtein Distance Algorithm
-
-Useful for:
-
-- String edition
-
-## Kosaraju Algorithm
-
-Useful for:
-
-- Graph compression
+|||
+| :- | :- |
+| Levenshtein Distance Algorithm | Useful for string edition |
+| Kosaraju Algorithm | Useful for graph compression |
+| Sparse matrix data structure | (>50% zero-entries) used as a matrix w/o loosing space |
 
 ## Ranges
 Two ranges are overlapping if `x1 <= y2 AND x2 <= y1`:

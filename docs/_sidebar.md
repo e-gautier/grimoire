@@ -1,4 +1,5 @@
 - Linux
+  - [CGroups](cgroups.md)
   - [File types](linux_file_types.md)
   - [Sockets](linux_sockets.md)
   - [Write to a process std](write_process_std.md)
@@ -12,11 +13,14 @@
   - [Socat](socat.md)
   - bash
     - [parameter expansion](shell_parameter_expansion.md)
-    - [script_errors](bash_script_errors.md)
-    - [environment variables](bash_evironement_variables.md)
+    - [script errors](bash_script_errors.md)
+    - [environment variables](bash_environment_variables.md)
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
+  - [sed](sed.md)
+  - [awk](awk.md)
+  - [ethtools](ethtools.md)
   - Kernel
     - [flags](kernel_flags.md)
 - Cisco
