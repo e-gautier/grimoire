@@ -1,6 +1,6 @@
 # Kernel flags
 
-Select resolution as boot:
+Select resolution at boot:
 
 ```
 vga=ask
