@@ -18,6 +18,7 @@
   - perf
     - [strace](strace.md)
     - [sar](sar.md)
+    - [dstat](dstat.md)
   - [sed](sed.md)
   - [awk](awk.md)
   - [ethtools](ethtools.md)
