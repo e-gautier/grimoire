@@ -48,6 +48,7 @@
   - [Samsung debloat phone](samsung_debloat.md)
 - Log
   - [tcpdump.service](log_tcpdump_service.md)
+  - [Input TCP connections](input_tcp_connections.md)
 - OSI
   - IP
     - [IP ranges](ip_ranges.md)
