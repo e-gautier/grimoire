@@ -14,8 +14,12 @@ Perf is a performance analysis tool looking at the kernel instruction pointer ad
 | `perf report` | quick analyse of a record |
 | `perf annotate` | assembly analysis of a record |
 | `perf script` | print the sample as text |
-| `perf record -g ls && perf script | stackcollapse-perf.pl | flamegraph.pl > graph.svg` | create a flamegraph from a sample (`firefox ./graph.svg`) |
+
+Create a flamegraph from a capture of `ls` (`firefox ./graph.svg`):
+```bash
+perf record -g ls && perf script | stackcollapse-perf.pl | flamegraph.pl > graph.svg
+```
 
 >Sources:
->-http://www.brendangregg.com/perf.html
->-perf-zine.pdf
+>- http://www.brendangregg.com/perf.html
+>- perf-zine.pdf

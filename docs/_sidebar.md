@@ -2,7 +2,7 @@
   - [CGroups](cgroups.md)
   - [File types](linux_file_types.md)
   - [Sockets](linux_sockets.md)
-  - [Write to a process std](write_process_std.md)
+  - [File descriptor operations](file_descriptor_operations.md)
   - [chmod cheat sheet](chmod_cheat_sheet.md)
   - [Tmux cheat sheet](tmux_cheat_sheet.md)
   - [Netcat reverse shell](nc_reverse_shell.md)
@@ -48,6 +48,7 @@
   - [Samsung debloat phone](samsung_debloat.md)
 - Log
   - [tcpdump.service](log_tcpdump_service.md)
+  - [Input TCP connections](input_tcp_connections.md)
 - OSI
   - IP
     - [IP ranges](ip_ranges.md)
