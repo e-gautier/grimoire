@@ -23,6 +23,7 @@
   - [sed](sed.md)
   - [awk](awk.md)
   - [ethtools](ethtools.md)
+  - [find](find.md)
   - Kernel
     - [flags](kernel_flags.md)
 - Cisco
