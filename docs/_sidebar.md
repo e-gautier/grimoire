@@ -10,6 +10,7 @@
   - [remove comments from bash file](remove_comments_bash_file.md)
   - [generate random alphanumeric strings](generate_random_alphanumeric_strings.md)
   - [namespaces](linux_namespaces.md)
+  - [ACLs](acl_filesystem.md)
   - [Socat](socat.md)
   - bash
     - [parameter expansion](shell_parameter_expansion.md)
