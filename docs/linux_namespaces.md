@@ -16,4 +16,23 @@ Namespaces can be created from the **clone(2)** syscall (which is part of the **
 
 > Note: PAM uses a module named **pam_namespace(8)** to isolate a session.
 
+## Examples:
+Fork, create a new pid namespace and mount a new proc volume:
+```bash
+unshare -fp --mount-proc bash
+```
+```bash
+pstree -pa
 
+bash,1
+  └─pstree,223 -pa
+```
+Create a new user namespace but run the program with the root UID and GID:
+```bash
+unshare -fU --map-root-user id
+
+uid=0(root) gid=0(root) groups=0(root)
+```
+>Sources:
+> - https://man7.org/linux/man-pages/man7/namespaces.7.html
+> - https://man7.org/linux/man-pages/man1/unshare.1.html
