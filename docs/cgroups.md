@@ -20,6 +20,32 @@ echo $PID > /sys/fs/cgroup/groupname/cgroup.procs
 
 ```
 
+## Systemd usage
+```bash
+systemctl edit --full systemd-resolved.service
+
+[...]
+MemoryMax=50M
+```
+```bash
+systemctl restart systemd-resolved.service
+```
+```bash
+ps -aux | grep systemd-resolved
+
+[...]
+systemd+ 163946 /usr/lib/systemd/systemd-resolved
+```
+```bash
+cat /proc/163946/cgroup
+
+0::/system.slice/systemd-resolved.service
+```
+```bash
+cat /sys/fs/cgroup/system.slice/systemd-resolved.service/memory.max
+
+52428800
+```
 >Sources:
 >- https://www.kernel.org/doc/Documentation/cgroup-v2.txt
 >- https://man7.org/linux/man-pages/man7/cgroups.7.html
