@@ -22,7 +22,7 @@
     > tcp_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)
   - SCTP (SOCK_SEQPACKET)
     > sctp_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_SCTP);
-  - RAW (SOCK_RAW) requires **CAP_NET_RAW** capability
+  - RAW (SOCK_RAW) requires **CAP_NET_RAW** capability (eg. `getcap /usr/bin/ping` -> `/usr/bin/ping = cap_net_admin,cap_net_raw+p`)
     > raw_socket = socket(AF_INET, SOCK_RAW, protocol);
 - Unix/Local (AF_UNIX) local communication
   - SOCK_STREAM, RAW etc..
