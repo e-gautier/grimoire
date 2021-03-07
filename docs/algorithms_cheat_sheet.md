@@ -5,6 +5,7 @@
 | Levenshtein Distance Algorithm | Useful for string edition |
 | Kosaraju Algorithm | Useful for graph compression |
 | Sparse matrix data structure | (>50% zero-entries) used as a matrix w/o loosing space |
+| Nagle's algorithm | Used to improve the efficency of TCP connections when dealing with small packets to prevent a Silly Window Syndrome |
 
 ## Ranges
 Two ranges are overlapping if `x1 <= y2 AND x2 <= y1`:
