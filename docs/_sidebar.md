@@ -34,7 +34,8 @@
 - Algorithms
   - [Algorithms cheat sheet](algorithms_cheat_sheet.md)
   - coroutines
-    - [Python coroutines](python_coroutines.md)
+    - [Python asyncio](python_asyncio.md)
+    - [Python concurrent](python_concurrent.md)
     - [Timeout a function in any language](timeout_function_in_any_language.md)
   - Map, Reduce, Filter
     - [MRF in any language](mrf_in_any_language.md)
