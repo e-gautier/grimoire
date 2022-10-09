@@ -70,5 +70,6 @@
   - [Rotate element](css_rotate.md)
 - Security
   - [SYN flood](syn_flood.md)
+  - [SSL cheat sheet](ssl_cheat_sheet.md)
 - Virtualbox
   - [Tips](virtualbox_tips.md)
