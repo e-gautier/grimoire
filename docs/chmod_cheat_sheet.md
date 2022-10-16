@@ -35,3 +35,8 @@
 | 5000 | `---S-----T` |
 | 6000 | `---S--S---` |
 | 7000 | `---S--S--T` |
+
+```bash
+# find all setUID or setGID binaries on the system
+find ${PATH//:/ } -maxdepth 1 -type f -perm /6000 -ls
+```
