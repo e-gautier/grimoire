@@ -1,16 +1,21 @@
 # SSL cheat sheet
+
 ```
 man openssl-s_client
 man openssl-req
 man openssl-x509
 ```
+
 ## Compare a key, csr and certificate public parts
+
 ```bash
 openssl pkey -in private.key -pubout -outform pem | sha256sum
 openssl x509 -in certificate.crt -pubkey -noout -outform pem | sha256sum
-openssl req -in request.csr -pubkey -noout -outform pem | sha256sum 
+openssl req -in request.csr -pubkey -noout -outform pem | sha256sum
 ```
+
 ## Generate a CSR & private key in one shot
+
 ```bash
 openssl req -nodes -new -config <(
 cat <<-EOF
@@ -22,6 +27,7 @@ CN = domain.net
 EOF
 )
 ```
+
 ```bash
 openssl req -nodes -new -config <(
 cat <<-EOF
@@ -39,13 +45,18 @@ DNS.2 = *.sub.domain.net
 EOF
 )
 ```
+
 ## Print a chain from an URL
+
 ```bash
 # servername required if SNI
 echo | openssl s_client -showcerts -servername www.domain.net -connect domain.net:443
 ```
+
 ## CAA
+
 DNS record to restrict the certificate authorities allowed to issue certificates on their domain name.
+
 ```bash
 # example from google.com
 $ dig CAA google.com
@@ -54,24 +65,41 @@ $ dig CAA google.com
 google.com.             86400   IN      CAA     0 issue "pki.goog"
 [...]
 ```
+
 ## SNI [Server Name Indication]
+
 Multi-domain handshake support.
 
 ![SNI.drawio](./ssl_cheat_sheet/SNI.drawio.png)
+
 ## ESNI [Encrypted Server Name Indication]
+
 Partial encrypted version of SNI, deprecated and replaced by ECH.
+
 ## ECH [Encrypted Client Hello]
+
 Total encrypted version of SNI.
+
 > https://blog.cloudflare.com/encrypted-client-hello/
+
 ## CT [Certificate transparency]
+
 Logs and monitoring of certificate issuances. (e.g. https://crt.sh/)
+
 > https://certificate.transparency.dev/
+
 ## CRL [Certificate Revocation List]
+
 Certificate revocation status list, deprecated for OCSP.
+
 ## OCSP [Online Certificate Status Protocol]
+
 Certificate revocation status list hosted by the CA (e.g. https://letsencrypt.org/docs/lencr.org/)
+
 ## SCT [Signed Certificate Timestamps]
+
 TLS extension, timestamps requested by the CA, provided by the CT server logs as a promise to add the certificate once it is issued. The timestamps signatures must be added to the certificate before the MMD [Maximum Merge Delay].
+
 ```bash
 # Example from the `*.google.com`:
 CT Precertificate SCTs:
@@ -102,6 +130,7 @@ CT Precertificate SCTs:
 ```
 
 > Sources:
+>
 > - https://www.cloudflare.com/learning/ssl/what-is-ssl/
 > - https://letsencrypt.org/docs/
 > - https://www.digicert.com/faq/certificate-transparency/enabling-ct.htm
