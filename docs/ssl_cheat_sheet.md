@@ -129,6 +129,14 @@ CT Precertificate SCTs:
                   16:8B:6C:E4:C0:EC:9F
 ```
 
+## PSL [Public suffix list]
+
+https://publicsuffix.org/
+
+https://publicsuffix.org/list/public_suffix_list.dat
+
+A community-managed list of TLDs and domains on which the certificate issuance is usually prevented. (originally used to several browser needs like avoid supercookies etc...).
+
 > Sources:
 >
 > - https://www.cloudflare.com/learning/ssl/what-is-ssl/
