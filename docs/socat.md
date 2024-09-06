@@ -40,3 +40,7 @@ socat TCP-LISTEN:1234,reuseaddr,fork UDP:127.0.0.1:53
 # client side
 socat udp4-RECVFROM:53,reuseaddr,fork tcp:127.0.0.1:1234
 ```
+Connect to a Unix socket in order to communicate with a process for instance
+```
+socat UNIX-CONNECT:<socket path>
+```
