@@ -90,11 +90,12 @@ Logs and monitoring of certificate issuances. (e.g. https://crt.sh/)
 
 ## CRL [Certificate Revocation List]
 
-Certificate revocation status list, deprecated for OCSP.
+Certificate revocation status list (https://letsencrypt.org/2022/09/07/new-life-for-crls/).
 
 ## OCSP [Online Certificate Status Protocol]
 
-Certificate revocation status list hosted by the CA (e.g. https://letsencrypt.org/docs/lencr.org/)
+Certificate revocation status list hosted by the CA (e.g. https://letsencrypt.org/docs/lencr.org/).
+Deprecated in favor of CRLs (https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls/).
 
 ## SCT [Signed Certificate Timestamps]
 
