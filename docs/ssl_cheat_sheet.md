@@ -97,6 +97,12 @@ Certificate revocation status list (https://letsencrypt.org/2022/09/07/new-life-
 Certificate revocation status list hosted by the CA (e.g. https://letsencrypt.org/docs/lencr.org/).
 Deprecated in favor of CRLs (https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls/).
 
+## ARI (ACME Renewal Information)
+
+ACME mechanism to provide a renewal period estimation from the CA side in order to mitigate load spikes.
+
+> https://datatracker.ietf.org/doc/draft-ietf-acme-ari/
+
 ## SCT [Signed Certificate Timestamps]
 
 TLS extension, timestamps requested by the CA, provided by the CT server logs as a promise to add the certificate once it is issued. The timestamps signatures must be added to the certificate before the MMD [Maximum Merge Delay].
